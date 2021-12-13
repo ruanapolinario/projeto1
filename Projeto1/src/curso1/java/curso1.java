@@ -12,9 +12,7 @@ public class curso1 {
 		String cpf = "057.876.447-43";
 		
 		System.out.println("Maior idade é = " + maiorIdade);
-		System.out.println("Idoso idade é = " + idosoIdade);
-		System.out.println("jovem idade é = " + jovemIdade);
-		System.out.println("criança idade é = " + criançaIdade);
+
 		System.out.println("CPF é = " + cpf);
 		
 		
