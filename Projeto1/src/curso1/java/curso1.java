@@ -14,13 +14,10 @@ public class curso1 {
 		
 	/*Switch Case, operações EXATAS*/
 		
-	switch (media) {
-	case 60:
-		System.out.println("aprovado");
-		break;
-
-	default:System.out.println("Outro valor: " + media);
-		break;
-	}
+		if (n1 != n2) {
+			System.out.println("notas são iguais");
+		} else {
+			System.out.println("não são iguais");
+		}
 	}
 }
