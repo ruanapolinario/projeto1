@@ -11,7 +11,12 @@ public class curso1 {
 		 */
 
 			for (int num = 10 ; num >= 0; num --) {
-			System.out.println("numero " + num);
+			if (num == 2) {
+				System.out.println("Encontrei o valor 2");
+				break;
+			}
+				
+			
 		}
 
 	}
