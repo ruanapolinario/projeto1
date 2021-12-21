@@ -4,20 +4,21 @@ public class curso1 {
 
 	public static void main(String[] args) {
 		
-		int n1 = 60;
+		/*int n1 = 60;
 		int n2 = 60;
 		int n3 = 60;
 		int n4 = 60;
 		int media = 0;
 		
-		media = (n1 + n2 + n3 + n4) / 4;
+		media = (n1 + n2 + n3 + n4) / 4;*/
 		
-	/*Switch Case, operações EXATAS*/
+		int num = 0;
 		
-		if (n1 != n2) {
-			System.out.println("notas são iguais");
-		} else {
-			System.out.println("não são iguais");
+	/*While*/
+		
+		while (num <= 10) {
+			System.out.println("numero atual " + num);
+			num ++;
 		}
-	}
+		}
 }
