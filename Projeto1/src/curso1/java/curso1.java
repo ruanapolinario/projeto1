@@ -10,13 +10,13 @@ public class curso1 {
 		 * media = (n1 + n2 + n3 + n4) / 4;
 		 */
 
-			for (int num = 10 ; num >= 0; num --) {
-			if (num == 2) {
-				System.out.println("Encontrei o valor 2");
-				break;
+		for (int num = 0; num <= 10; num++) {
+			if (num == 2 || num == 4 || num == 7 || num == 8) {
+				System.out.println("Encontrei o valor: " + num);
+				continue;
 			}
-				
-			
+
+			System.out.println("processando laço de repetição");
 		}
 
 	}
