@@ -18,8 +18,16 @@ public class curso1 {
 
 		double resto = carroNum % pessoaNum;
 
-		JOptionPane.showMessageDialog(null, "Cada pessoa ficará com " + cada + " e restará " + resto);
-		
+		int resposta = JOptionPane.showConfirmDialog(null, "Deseja ver o resultado da divisão?");
+		if (resposta == 0) {
+			JOptionPane.showMessageDialog(null, "Cada pessoa ficará com " + cada);
+			
+		}
+		resposta = JOptionPane.showConfirmDialog(null, "Deseja saber quanto sobrou?");
+		if (resposta == 0) {
+			JOptionPane.showMessageDialog(null, "Sobrou " + resto);
+		}
+
 		/*
 		 * System.out.println("Cada pessoa ficará com " + cada + " e restará " + resto);
 		 */
