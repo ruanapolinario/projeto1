@@ -6,31 +6,33 @@ public class curso1 {
 
 	public static void main(String[] args) {
 
-		String carros = JOptionPane.showInputDialog("Informe a quantidade de carros:");
-		String pessoas = JOptionPane.showInputDialog("Informe a quantidade de pessoas: ");
+		String n1 = JOptionPane.showInputDialog("Informe a nota 1 do aluno:");
+		String n2 = JOptionPane.showInputDialog("Informe a nota 2 do aluno:");
+		String n3 = JOptionPane.showInputDialog("Informe a nota 3 do aluno:");
+		String n4 = JOptionPane.showInputDialog("Informe a nota 4 do aluno:");
 
-		/* Transformar string em double */
-		double carroNum = Double.parseDouble(carros);
-		double pessoaNum = Double.parseDouble(pessoas);
+		double dNota1 = Double.parseDouble(n1);
+		double dNota2 = Double.parseDouble(n2);
+		double dNota3 = Double.parseDouble(n3);
+		double dNota4 = Double.parseDouble(n4);
 
-		/* Calcula a divisao e depois converte para inteiro */
-		int cada = (int) (carroNum / pessoaNum);
-
-		double resto = carroNum % pessoaNum;
-
-		int resposta = JOptionPane.showConfirmDialog(null, "Deseja ver o resultado da divisão?");
-		if (resposta == 0) {
-			JOptionPane.showMessageDialog(null, "Cada pessoa ficará com " + cada);
-			
-		}
-		resposta = JOptionPane.showConfirmDialog(null, "Deseja saber quanto sobrou?");
-		if (resposta == 0) {
-			JOptionPane.showMessageDialog(null, "Sobrou " + resto);
-		}
+		double media = (dNota1 + dNota2 + dNota3 + dNota4) / 4;
 
 		/*
-		 * System.out.println("Cada pessoa ficará com " + cada + " e restará " + resto);
+		 * media para aprovação = 70 media para reprovação = 50
 		 */
 
+		if (media >= 50) {
+			if (media >= 70) {
+				JOptionPane.showMessageDialog(null, "Aluno aprovado com media: " + media);
+			} else {
+				JOptionPane.showMessageDialog(null, "Aluno em recuperação com media: " + media);
+
+			}
+		}else {
+			JOptionPane.showMessageDialog(null, "Aluno reprovado com media: " + media);
+		}
+
+		
 	}
 }
